@@ -1,9 +1,62 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.app-container {
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/06/19/44/mountains-2590765_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
 
-.animate-breath {
+.zen-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+.quote {
+  font-style: italic;
+  color: #333;
+}
+
+.mood-buttons button {
+  margin: 0 0.25rem;
+  font-size: 1.25rem;
+}
+
+.breath-circle {
+  margin: 1rem auto;
+  width: 150px;
+  height: 150px;
+  background-color: #a5d6a7;
+  border-radius: 50%;
   animation: breathe 6s ease-in-out infinite;
 }
 
